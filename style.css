@@ -9,6 +9,8 @@ h1 {
     font-family: 'Sedgwick Ave Display', cursive;
     color: white;
     text-align: center;
+    font-size:50px;
+    font-weight: 400px;
     border-style: solid;
     border-color: red;
     background-image: linear-gradient(to right, purple, blue);
@@ -16,10 +18,9 @@ h1 {
 }
 
 .background:hover {
-    background-image: url("fireworks 2.jpg");
-    background-size:  contain, cover;
-    background-repeat: no-repeat;
-    margin-left: 800px;
+    background-image: url("fireworks 3.jpg");
+    height:1300px;
+    
 }
 
 
@@ -29,9 +30,9 @@ h1 {
     margin-left: 1160px;
     top: 0px;
     height: 100px;
-    -webkit-animation-name: fairy;
+    animation-name: fairy;
     /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
     /* Safari 4.0 - 8.0 */
     animation-name: fairy;
     animation-duration: 10s;
@@ -44,7 +45,7 @@ h1 {
   50%  {left:0px; top:0px;}
   100% {left:200px; top:0px;}
 }
-@-webkit-keyframes fairy {
+@keyframes fairy {
   0%   {left:0px; top:0px}
   25%  {left:200px; top:0px;}
   50%  {left:0px; top:0px;}
@@ -55,23 +56,17 @@ h1 {
      position: fixed;
      top: 0px;
      height: 100px;
-      -webkit-animation-name: fairy1;
+     animation-name: fairy1;
     /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
     /* Safari 4.0 - 8.0 */
     animation-name: fairy1;
     animation-duration: 10s;
     animation-iteration-count: infinite;
       }
-      @keyframes fairy1 {
+@keyframes fairy1 {
   0%   {left:650px; top:0px}
   25%  {left:500px; top:0px;}
   50%  {left:650px; top:0px;}
   100% {left:500px; top:0px;}
-}
-@-webkit-keyframes fairy1 {
-  0%   {right:200px; top:0px}
-  25%  {right:0px; top:200px;}
-  50%  {right:200px; top:0px;}
-  100% {right:0px; top:200px;}
 }
